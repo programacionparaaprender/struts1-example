@@ -23,6 +23,15 @@
 			<forward name="view" path="/HelloWorld" redirect="true" />
 			
 		</action>
+		
+		<action
+			path="/Login"
+			type="app.action.UserAction"
+			name="userForm">	
+			
+			<forward name="success" path="/jsp/Welcome.jsp"/>
+		</action>
+		
 	</action-mappings>
 
 	<message-resources parameter="messages.ApplicationResources" null="false" />

@@ -18,10 +18,11 @@
 
 <h1> Struts html:text example </h1>
 
-<html:form action="/text">
+<html:form action="/Hello">
 
-<b> Enter First Name:</b> <html:text property="fname"/> <br>
-<b> Enter Last Name:</b> <html:text property="lname"/> <br>
+
+<b> Enter User Name:</b> <html:text property="username"/> <br>
+<b> Enter Password:</b> <html:text property="password"/> <br>
 <html:submit value="Submit"/>
 <html:reset value="Reset"/>
 </html:form>
