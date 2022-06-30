@@ -8,6 +8,8 @@
 	<form-beans>
 		<form-bean name="helloWorldForm"
 				   type="app.form.HelloWorldForm"/>
+		<form-bean name="UserForm"
+				   type="app.form.UserForm"/>
 	</form-beans>
 
 	<action-mappings>
@@ -27,7 +29,7 @@
 		<action
 			path="/Login"
 			type="app.action.UserAction"
-			name="userForm">	
+			name="UserForm">	
 			
 			<forward name="success" path="/jsp/Welcome.jsp"/>
 		</action>

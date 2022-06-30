@@ -15,6 +15,12 @@
 	</properties>
 
     <dependencies>
+    <!-- https://mvnrepository.com/artifact/org.apache.struts/struts-taglib -->
+    <dependency>
+        <groupId>org.apache.struts</groupId>
+        <artifactId>struts-taglib</artifactId>
+        <version>${struts.version}</version>
+    </dependency>
 
         <dependency>
             <groupId>org.apache.struts</groupId>

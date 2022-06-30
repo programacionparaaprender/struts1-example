@@ -1,7 +1,8 @@
-<%@taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
-<%@taglib uri="http://struts.apache.org/tags-bean" prefix="bean"%>
+<%@ taglib uri="http://struts.apache.org/tags-bean" prefix="bean" %>
+<%@ taglib uri="http://struts.apache.org/tags-html" prefix="html" %>
+<%@ taglib uri="http://struts.apache.org/tags-logic" prefix="logic" %>
+<%@page import="app.entidad.ListaCampos"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://struts.apache.org/tags-bean" prefix="bean"%>
 <%
 	String contextPath = request.getContextPath();
 	String name = "Jun";
@@ -15,12 +16,8 @@
     <title>Hello</title>
 </head>
 <body>
-
 <h1> Struts html:text example </h1>
-
 <html:form action="/Hello">
-
-
 <b> Enter User Name:</b> <html:text property="username"/> <br>
 <b> Enter Password:</b> <html:text property="password"/> <br>
 <html:submit value="Submit"/>

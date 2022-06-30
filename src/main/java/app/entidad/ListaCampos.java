@@ -1,24 +1,12 @@
-package app.form;
+package app.entidad;
 
-import org.apache.struts.action.ActionForm;
+import java.io.Serializable;
 
-public class HelloWorldForm extends ActionForm {
-	
-	private String message;
+public class ListaCampos implements Serializable {
 
-	String username;
+    String username;
 	
 	String password;
-	
-	public String getMessage() {
-		return message;
-	}
-
-	public void setMessage(String message) {
-		this.message = message;
-	}
-
-	
 
 	public String getUsername() {
 		return username;
@@ -38,5 +26,5 @@ public class HelloWorldForm extends ActionForm {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+
 }
